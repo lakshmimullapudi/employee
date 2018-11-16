@@ -1,0 +1,59 @@
+.sign-in{
+    margin: 30px;
+}
+.sign-card {
+    background-color: #5453A4;
+    height: 83vh;
+    border-radius:5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sign-card-title{
+    color:white;
+    text-align: center;
+    font-size:20px;
+}
+.sign-card-subtitle{
+    color: #B8B8DB;
+}
+.sign-form {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+.sign-full-width {
+    width: 30vw;
+  }
+input{
+    background-color: #302F74;
+    height:30px;
+    border-radius: 5px;
+    color:white;
+}
+.sign-check{
+    display:flex;
+    justify-content: space-between;
+    color:white;
+}
+.sign-check a{
+    color:#34CCC6;
+}
+button{
+    width:30vw;
+    color:#FFFFFF;
+    border-radius: 5px;
+    border:none;
+    background: linear-gradient(to right,#34CCC6,#92E2F9);
+    margin:15px auto 15px;
+}
+a{
+    text-decoration: none;
+    color:#B8B8DB;
+}
+.sign-up{
+    color:#B8B8DB;
+}
+
+

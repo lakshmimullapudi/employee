@@ -1,0 +1,26 @@
+<div class="sign-in">
+  <mat-card class="sign-card" >
+    <mat-card-header>
+      <mat-card-title class="sign-card-title">Sign In</mat-card-title>
+      <mat-card-subtitle class="sign-card-subtitle">Hello! Sign in with your username or email</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="signupForm"  (ngSubmit)="onSubmit(signupForm)" class = "sign-form" >
+        <mat-form-field class="sign-full-width">
+          <input matInput placeholder="Email ID|Username"  formControlName=firstName>
+        </mat-form-field>
+        <mat-form-field class="sign-full-width">
+          <input matInput placeholder="Password" type ="password">
+        </mat-form-field>
+        <div class="sign-check">
+          <mat-checkbox>Remember me</mat-checkbox>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" mat-button>SIGN IN</button>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <div class="sign-up">Don't have an account?<a href="#"> Sign Up</a></div>
+    </mat-card-actions>
+  </mat-card>
+</div>
