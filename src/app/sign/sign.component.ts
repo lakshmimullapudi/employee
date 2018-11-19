@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ErrorStateMatcher} from '@angular/material/core';
 import {FormControl, FormGroupDirective, NgForm, Validators, FormGroup,FormBuilder} from '@angular/forms';
+import { Router, ActivatedRoute } from '@angular/router';
 
 function nam(){
   console.log('hi');
@@ -15,20 +16,21 @@ let a=document.getElementById('');
 })
 export class SignComponent implements OnInit {
 signupForm:FormGroup;
-  constructor(private fb: FormBuilder) { }
+name:string;
+pass:string;
+  constructor(private fb: FormBuilder,private router:Router,private route:ActivatedRoute) { }
 
   ngOnInit() {
    this.signupForm= this.fb.group({
-      firstName:['',[<any>Validators.required, <any>Validators.minLength(5)]],
-   
+      firstName:['',[Validators.required,Validators.email]],
+      password:['',[Validators.required,Validators.minLength(6)]]
    });
-   
-
-   console.log(this.signupForm);
   }
 
-  onSubmit(val){
-console.log(val);
-  }
+onSubmit(val){
+this.name =val.value.firstName;
+this.pass =val.value.password;
+this.router.navigate(["dashbord"]);
+ }
 
 }

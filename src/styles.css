@@ -16,3 +16,9 @@ display:none;
     color: #8787AC;
     margin-top:8px;
 }
+
+
+.mat-card{
+    box-shadow: 5px 10px #888888;
+}
+

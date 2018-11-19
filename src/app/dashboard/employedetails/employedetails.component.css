@@ -1,0 +1,12 @@
+.employe-title{
+    display:flex;
+    justify-content: space-between;
+}
+.employe-title h4{
+    color: #FFFFFF;
+    margin:0px;
+}
+.employe-title button{
+    background-color: #34CCC6;
+    height:30px;
+}
