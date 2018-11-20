@@ -19,4 +19,4 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
  
 })
 export class MaterialModule { }
-export const materialComponents = [MatCardModule,MatFormFieldModule,MatInputModule,MatCheckboxModule,MatButtonModule,MatGridListModule,BrowserAnimationsModule]
+export const materialComponents = [MatCardModule,MatFormFieldModule,MatInputModule,MatCheckboxModule,MatButtonModule,MatGridListModule,BrowserAnimationsModule,MatTableModule]

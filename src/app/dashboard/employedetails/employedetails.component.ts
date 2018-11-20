@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import {MatTableDataSource} from '@angular/material';
+import{EmplistService} from '../employedetails/emplist.service';
 
 @Component({
   selector: 'app-employedetails',
@@ -7,19 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./employedetails.component.css']
 })
 export class EmployedetailsComponent implements OnInit {
-data = ["name","origin"];
-source = table_data;
-  constructor() { }
+  displayedColumns:string[] = ["SI.No","First Name","Last Name","Email Id","Designation","Department","Joined Date","Details"];
+  source;
+  constructor(private list:EmplistService) { }
 
   ngOnInit() {
+    this.list.subject.subscribe(value=>{
+      this.source=value.employee;
+    });
+    
   }
-
+ 
 }
 
-
-const table_data =[{name:"sravya",origin:"angular"},
-{name:"krishna",origin:"react"},
-{name:"damodar",origin:"ext"},
-{name:"rohit",origin:"node"},
-{name:"sushant",origin:"java"}
-]

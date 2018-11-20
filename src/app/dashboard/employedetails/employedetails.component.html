@@ -2,15 +2,41 @@
     <h4>Employees</h4>
     <button mat-button>+ Add New</button>
 </div>
-<!-- <table mat-table [dataSource] = "source">
-            <ng-container matcolumnDef ="name">
-                <th mat-header-cell *matHeaderCellDef> Name</th>
-                <td mat-cell *matCellDef="let element">{{element.name}}</td>
+<!-- <div class="example-container mat-elevation-z8"> -->
+<mat-table #table [dataSource] = "source">
+            <ng-container matColumnDef ="SI.No">
+                <mat-header-cell  *matHeaderCellDef>SI.No</mat-header-cell>
+                <mat-cell  *matCellDef="let element">{{element.sno}}</mat-cell>
             </ng-container>
-            <ng-container matcolumnDef = "origin">
-                <th mat-header-cell *matHeaderCellDef>origin</th>
-                <td mat-cell *matCellDef = "let element">{{element.origin}}</td>
+            <ng-container matColumnDef = "First Name">
+                <mat-header-cell  *matHeaderCellDef>First Name</mat-header-cell>
+                <mat-cell  *matCellDef = "let element">{{element.firstName}}</mat-cell>
             </ng-container>
-            <tr mat-header-row *matHeaderRowDef="data"></tr>
-            <tr mat-row *matRowDef = "let row;column:data"></tr>
-</table> -->
+            <ng-container matColumnDef ="Last Name">
+                <mat-header-cell  *matHeaderCellDef>Last Name</mat-header-cell>
+                <mat-cell  *matCellDef="let element">{{element.lastName}}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef ="Email Id">
+                <mat-header-cell  *matHeaderCellDef>Email Id</mat-header-cell>
+                <mat-cell  *matCellDef="let element">{{element.emailId}}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef ="Designation">
+                <mat-header-cell  *matHeaderCellDef>Designation</mat-header-cell>
+                <mat-cell  *matCellDef="let element">{{element.designation}}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef ="Department">
+                <mat-header-cell  *matHeaderCellDef>Department</mat-header-cell>
+                <mat-cell  *matCellDef="let element">{{element.expDepartment}}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef ="Joined Date">
+                <mat-header-cell  *matHeaderCellDef>Joined Date</mat-header-cell>
+                <mat-cell  *matCellDef="let element">{{element.expJoinDate}}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef ="Details">
+                <mat-header-cell  *matHeaderCellDef>Details</mat-header-cell>
+                <mat-cell  *matCellDef="let element">{{element.details}}</mat-cell>
+            </ng-container>
+            <mat-header-row  *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef = "let row;columns:displayedColumns;"></mat-row>
+</mat-table>
+<!-- </div> -->

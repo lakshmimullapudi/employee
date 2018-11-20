@@ -1,0 +1,38 @@
+.main-cards{
+    width:19%;
+    height:70%;
+    display:flex;
+    padding:0%;
+    background-color: #5453A4;
+    border-radius:5px;
+}
+.card-image{
+    width:40%;
+    display:flex;
+    justify-content: center;
+    border-radius:5px;
+}
+.card-image img{
+    width:40%;
+}
+.card-content{
+    width:60%;
+    font-size:12px;
+    text-align: center;
+    color:#FFFFFF;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-content h4{
+    margin: 0%;
+}
+.card-content p{
+    margin: 0%;
+    border-radius: 35px;
+    width:13%;
+    padding:10px;
+    background-color: #FFFFFF;
+    color:#302F74;
+}

@@ -7,23 +7,30 @@ import { EmployedetailsComponent } from './dashboard/employedetails/employedetai
 import{materialComponents} from './material/material.module';
 import{RoutingModule,routerElements} from './routing/routing.module';
 import { SidebarComponent } from './dashboard/sidebar/sidebar.component';
+import{LoginService} from './dashboard/login.service';
+import{EmplistService} from './dashboard/employedetails/emplist.service';
+import{HttpModule} from '@angular/http';
+import { ThumbnailsComponent } from './dashboard/thumbnails/thumbnails.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     EmployedetailsComponent,
     routerElements,
-    SidebarComponent
+    SidebarComponent,
+    ThumbnailsComponent,
     
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     materialComponents,
-    RoutingModule
+    RoutingModule,
+    HttpModule
     
   ],
-  providers: [],
+  providers: [LoginService,EmplistService],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }

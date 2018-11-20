@@ -1,16 +1,16 @@
-<mat-grid-list class="main-grid" cols="10" rows="10" rowHeight="fit" gutterSize=1px>
-  <mat-grid-tile  colspan=10 rowspan=1>
+<mat-grid-list class="main-grid" cols="40" rows="30" rowHeight="fit" gutterSize=1px>
+  <mat-grid-tile  colspan=40 rowspan=2>
     <mat-card class="header">
     <app-header></app-header>
   </mat-card>
   </mat-grid-tile>
-  <mat-grid-tile  class="grid-list" colspan=2 rowspan=9>
+  <mat-grid-tile  class="grid-list" colspan=6 rowspan=28>
     <app-sidebar></app-sidebar>
   </mat-grid-tile>
-  <mat-grid-tile  colspan=8 rowspan=2>
-cards
+  <mat-grid-tile  colspan=34 rowspan=5>
+  <app-thumbnails class = "thumbnail"></app-thumbnails>
   </mat-grid-tile>
-  <mat-grid-tile colspan=8  rowspan=7>
+  <mat-grid-tile colspan=34  rowspan=23>
     <mat-card class="employee-list">
       <app-employedetails></app-employedetails>
     </mat-card>
