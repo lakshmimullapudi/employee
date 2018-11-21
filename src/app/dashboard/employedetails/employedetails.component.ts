@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import{EmplistService} from '../employedetails/emplist.service';
+import { EmplistService } from '../employedetails/emplist.service';
 
 @Component({
   selector: 'app-employedetails',
@@ -7,16 +7,17 @@ import{EmplistService} from '../employedetails/emplist.service';
   styleUrls: ['./employedetails.component.css']
 })
 export class EmployedetailsComponent implements OnInit {
-  displayedColumns:string[] = ["SI.No","First Name","Last Name","Email Id","Designation","Department","Joined Date","Details"];
+  displayedColumns: string[] = ["SI.No", "First Name", "Last Name", "Email Id", "Designation", "Department", "Joined Date", "Details"];
   source;
-  constructor(private list:EmplistService) { }
+  constructor(private list: EmplistService) {
+  }
 
   ngOnInit() {
-    this.list.subject.subscribe(value=>{
-      this.source=value.employee;
-    });
-    
+    this.list.listData.subscribe(
+      value => this.source = value.employee
+    )
+
   }
- 
+
 }
 

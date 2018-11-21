@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatCardModule,MatFormFieldModule,MatInputModule,MatCheckboxModule,MatButtonModule,MatGridListModule,MatTableModule} from '@angular/material';
+import {MatCardModule,MatFormFieldModule,MatInputModule,MatCheckboxModule,MatButtonModule,MatGridListModule,MatTableModule,MatSidenavModule,MatToolbarModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -19,4 +19,4 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
  
 })
 export class MaterialModule { }
-export const materialComponents = [MatCardModule,MatFormFieldModule,MatInputModule,MatCheckboxModule,MatButtonModule,MatGridListModule,BrowserAnimationsModule,MatTableModule]
+export const materialComponents = [MatCardModule,MatFormFieldModule,MatInputModule,MatCheckboxModule,MatButtonModule,MatGridListModule,BrowserAnimationsModule,MatTableModule,MatSidenavModule,MatToolbarModule]

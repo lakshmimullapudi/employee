@@ -1,0 +1,12 @@
+.sidebar{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+.sidebar img{
+    width:15px;
+    height:15px;
+}
+.sidebar div{
+    color:#B8B8DB;
+}

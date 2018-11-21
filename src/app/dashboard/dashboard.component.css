@@ -1,25 +1,29 @@
-.main-grid{
-    height: 100vh;
+.main-grid {
+  height: 100vh;
 }
-.grid-list{
-    background-color: #5453A4;
+
+.grid-list {
+  background-color: #5453a4;
 }
-.header{
-    width:100%;
-    height:100%;
-    background-color: #5453A4;
-    box-shadow: 5px 10px #888888;
+
+.header {
+  width: 100%;
+  height: 100%;
 }
-.employee-list{
-    /* margin:auto; */
-    width:90%;
-    height:85%;
-    background-color: #5453A4;
+
+.employee-list {
+  width: 94%;
+  height: 90%;
 }
-.thumbnail{
-    width:100%;
-    height: 100%;
-    display:flex;
-    justify-content: space-around;
-    align-items:center;
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sidenav{
+  width:100%;
+  height:90%;
 }

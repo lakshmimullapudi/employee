@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import{Routes,RouterModule} from '@angular/router';
 import{SignComponent} from '../sign/sign.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
-import{Routes,RouterModule} from '@angular/router';
-import{LoginService} from '../dashboard/login.service';
+import{LoginService} from '../sign/login.service';
 
 const routes:Routes = [
-  {path:'',component:SignComponent},
+  {path:"",redirectTo:"sign",pathMatch:"full"},
+  {path:'sign',component:SignComponent},
   {path:'dashbord',component:DashboardComponent,canActivate: [ LoginService ]},
   {path:'**',component:SignComponent}
 ]

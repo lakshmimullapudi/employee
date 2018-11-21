@@ -1,18 +1,14 @@
 <mat-grid-list class="main-grid" cols="40" rows="30" rowHeight="fit" gutterSize=1px>
-  <mat-grid-tile  colspan=40 rowspan=2>
-    <mat-card class="header">
-    <app-header></app-header>
-  </mat-card>
+  <mat-grid-tile colspan=40 rowspan=2>
+    <app-header class="header"></app-header>
   </mat-grid-tile>
-  <mat-grid-tile  class="grid-list" colspan=6 rowspan=28>
-    <app-sidebar></app-sidebar>
+  <mat-grid-tile class="grid-list" colspan=6 rowspan=28>
+    <app-sidebar class="sidenav"></app-sidebar>
   </mat-grid-tile>
-  <mat-grid-tile  colspan=34 rowspan=5>
-  <app-thumbnails class = "thumbnail"></app-thumbnails>
+  <mat-grid-tile colspan=34 rowspan=5>
+    <app-thumbnails class="thumbnail"></app-thumbnails>
   </mat-grid-tile>
-  <mat-grid-tile colspan=34  rowspan=23>
-    <mat-card class="employee-list">
-      <app-employedetails></app-employedetails>
-    </mat-card>
+  <mat-grid-tile colspan=34 rowspan=23>
+    <app-employedetails class="employee-list"></app-employedetails>
   </mat-grid-tile>
 </mat-grid-list>

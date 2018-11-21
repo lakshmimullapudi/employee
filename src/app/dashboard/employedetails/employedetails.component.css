@@ -1,14 +1,23 @@
-.employe-title{
-    display:flex;
-    justify-content: space-between;
+.employee-card {
+  background-color: #5453a4;
+  border-radius: 5px;
 }
-.employe-title h4{
-    color: #FFFFFF;
-    margin:0px;
+
+.employe-title {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-bottom:2px;
 }
-.employe-title button{
-    background-color: #34CCC6;
-    height:30px;
-    margin:0px;
-    color:white;
+
+.employe-title h4 {
+  color: #ffffff;
+  margin: 0px;
+}
+
+.employe-title button {
+  background-color: #34ccc6;
+  height: 30px;
+  margin: 0px;
+  color: white;
 }
