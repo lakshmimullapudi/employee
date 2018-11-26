@@ -18,7 +18,7 @@
         </ng-container>
         <ng-container matColumnDef="Email Id">
             <mat-header-cell *matHeaderCellDef>Email Id</mat-header-cell>
-            <mat-cell *matCellDef="let element">{{element.emailId}}</mat-cell>
+            <mat-cell class = "email-cell"*matCellDef="let element" matTooltip="{{element.emailId}}">{{element.emailId}}</mat-cell>
         </ng-container>
         <ng-container matColumnDef="Designation">
             <mat-header-cell *matHeaderCellDef>Designation</mat-header-cell>

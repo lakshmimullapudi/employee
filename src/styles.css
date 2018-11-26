@@ -42,3 +42,8 @@ display:none;
 .mat-cell a{
     color:white;
 }
+p.active{
+    border:thin solid #34CCC6;
+    background-color: rgba(52, 204, 199, 0.26);
+    
+}

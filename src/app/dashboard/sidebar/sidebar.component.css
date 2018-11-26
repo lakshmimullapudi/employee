@@ -10,3 +10,14 @@
 .sidebar div{
     color:#B8B8DB;
 }
+.onBoard{
+    background-color: #3D3780;
+    color:#FFFFFF;
+    height:15vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon{
+    transform: rotate(180deg);
+}

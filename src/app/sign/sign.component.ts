@@ -12,8 +12,6 @@ import { LoginService } from './login.service';
 })
 export class SignComponent implements OnInit {
   signupForm: FormGroup;
-  name: string;
-  pass: string;
   constructor(private fb: FormBuilder, private router: Router, private route: ActivatedRoute, private log: LoginService) { }
 
   ngOnInit() {
@@ -24,8 +22,6 @@ export class SignComponent implements OnInit {
   }
 
   onSubmit(val) {
-    // this.name = val.value.firstName;
-    // this.pass = val.value.password;
     this.log.logging(val);
     this.router.navigate(["dashbord"]);
   }

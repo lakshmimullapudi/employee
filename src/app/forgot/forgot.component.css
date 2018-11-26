@@ -1,0 +1,53 @@
+.forgot{
+    margin: 30px;
+}
+.forgot-card{
+    background-color: #5453a4;
+    height: 83vh;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.forgot-card-title{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.forgot-card-subtitle {
+    color: #b8b8db;
+    
+  }
+.forgot-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.forgot-full-width {
+    width: 30vw;
+}
+  
+input {
+    background-color: #302f74;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+}
+button {
+    width: 30vw;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(to right, #34ccc6, #92e2f9);
+    margin: 15px auto 15px;
+}
+.forgot-actions{
+    display:flex;
+   justify-content: space-between;
+   width: 30vw;
+}
+a {
+    text-decoration: none;
+    color: #b8b8db;
+  }

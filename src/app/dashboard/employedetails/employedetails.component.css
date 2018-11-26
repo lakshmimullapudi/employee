@@ -21,3 +21,8 @@
   margin: 0px;
   color: white;
 }
+.email-cell{
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

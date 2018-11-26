@@ -9,8 +9,8 @@ import { EmplistService } from '../employedetails/emplist.service';
 export class EmployedetailsComponent implements OnInit {
   displayedColumns: string[] = ["SI.No", "First Name", "Last Name", "Email Id", "Designation", "Department", "Joined Date", "Details"];
   source;
-  constructor(private list: EmplistService) {
-  }
+  
+  constructor(private list: EmplistService) {  }
 
   ngOnInit() {
     this.list.listData.subscribe(

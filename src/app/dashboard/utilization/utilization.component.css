@@ -1,0 +1,23 @@
+.utilization-card{
+  background-color: #5453a4;
+  border-radius: 5px;
+}
+.utilization{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.utilization p{
+  margin:0%;
+  color: #FFFFFF;
+}
+.utilization .excel{
+  background-color: #34CCC6;
+  color:white;
+  border-radius: 5px;
+}
+.utilization .util{
+  background-color: #8970FF;
+  color:white;
+  border-radius: 5px;
+}

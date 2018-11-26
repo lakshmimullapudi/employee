@@ -1,5 +1,10 @@
 <div class="sidebar">
     <img src="assets/Icons/Employee Dashboard.svg">
-    <div>Employee Dashboard</div>
-    <img src="assets/Icons/DropDown.svg">
+    <div (click) ="dashboard()">Employee Dashboard
+        <img src="assets/Icons/DropDown.svg" [ngClass] = "{'icon':!board}">
+    </div>
+</div>
+<div *ngIf = "board" [ngClass]='{"onBoard":board}'>
+    <p routerLink="employees" routerLinkActive = "active">Employees</p>
+    <p routerLink="utilization" routerLinkActive = "active">Utilization</p>
 </div>
